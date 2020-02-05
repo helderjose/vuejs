@@ -1,0 +1,27 @@
+Obs: Talvez pecise do sudo nos comandos de instalação
+
+npm install -g @vue/cli
+
+vue --version
+vue --help
+
+
+
+Exemplos
+vue create vue-cli-new
+Please picka a preset: Manually
+
+Selecione os presets desejados (espaço para marcar)
+para esse exemplo marque: Babel, Progressive Web App, Router, Vuex, Linter
+responda "n"
+
+marque ESLint + Standard config
+marque Lint on save
+marque "In dedicated config files"
+responda "y"
+dê o nome: standard-custom
+
+No arquivo ~/.vuerc vai ficar salvo o template "standard-custom"
+
+cd vue-cli-new
+npm run serve

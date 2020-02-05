@@ -1,0 +1,38 @@
+<div id="app">
+    <p v-if="show">You can see me! <span>Hello!</span></p>
+    <p v-else>Now you see me!</p>
+
+    <!-- use template para agrupar múltiplos elementos com v-if. Pode usar div também -->
+    <template v-if="show">
+      <h1>Heading</h1>
+      <p>Inside a template</p>
+    </template>
+
+    <p v-show="show">Do you also see me?</p>
+
+    <button @click="show = !show">Switch</button>
+  </div>
+
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+
+<script>
+  new Vue({
+    el: "#app",
+    data: {
+      show: true
+    }
+  });
+</script>
+
+<!--
+  https://vuejs.org/v2/guide/conditional.html
+  
+  v-if anexa ou desanexa elementos no DOM. v-if é mais performático que v-show
+
+  v-else faz referẽncia ao último v-if.
+
+  v-else-if Vue 2.1.0+
+  https://vuejs.org/v2/guide/conditional.html#v-else-if
+
+  v-show faz o hidde (display none) do elemento no DOM
+-->

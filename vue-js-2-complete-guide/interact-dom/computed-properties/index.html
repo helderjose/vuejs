@@ -1,0 +1,33 @@
+<div id="app">
+  <button v-on:click="counter++">Increase</button>
+  <button v-on:click="counter--">Decrease</button>
+  <button v-on:click="secondCounter++">Increase Second</button>
+  <p>Counter: {{ counter }} | {{ secondCounter }}</p>
+  <p>Result: {{ result() }} | {{ output }}</p>
+</div>
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+<script>
+  new Vue({
+    el: "#app",
+    data: {
+      counter: 0,
+      secondCounter: 0
+    },
+    // computed: dependent properties
+    computed: {
+      // perceba que output é uma propriedade e não um método, por isso não usa parênteses no html
+      output: function() {
+        console.log("Computed -> output");
+        return this.counter > 5 ? "Greater 5" : "Smaller than 5";
+      }
+    },
+    methods: {
+      result: function() {
+        console.log("Methods -> result");
+        return this.counter > 5 ? "Greater 5" : "Smaller than 5";
+      }
+    }
+  });
+</script>

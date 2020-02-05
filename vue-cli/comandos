@@ -1,0 +1,19 @@
+vue --help
+vue list  // lista os templates disponíveis
+
+
+mkdir primeiro-projeto
+cd primeiro-projeto/
+vue init webpack-simple vue-cli // aceite as opções padrão
+
+cd vue-cli
+npm install
+npm run dev
+
+
+npm run build   // gera o bundle de produção
+
+# Instalar Plugins
+https://github.com/vuetifyjs/vue-cli-plugin-vuetify
+vue add vuetify
+(vai instar o vue-cli-plugin-vuetify por causa do padrão de nome de plugin)

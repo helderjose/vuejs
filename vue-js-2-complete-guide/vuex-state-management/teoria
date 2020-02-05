@@ -1,0 +1,26 @@
+Section 17
+  vídeo 261 - state management
+  vídeo 262 - centralized state
+  vídeo 265 - Understanding Getters
+  vídeo 268 - Understanding Mutations
+  vídeo 271 - How Actions improve Mutations
+  vídeo 274 - A Summary of Vuex
+
+GETTERS
+São usados em computed properties por exemplo (json "computed" do component vue).
+O getter retorna uma variável do state.
+
+
+
+MUTATIONS
+mutations always has to be synchronous, se precisar executar algo de
+forma assíncrona, use actions
+
+Mutations vai no json de "methods" e pode ser usado com @click por exemplo.
+
+
+
+ACTIONS
+As actions podem ser assíncronas (uma chamada de api por exemplo).
+As actions são usadas no json de methods do componente vue e podem ser usadas com @click por exemplo.
+

@@ -1,0 +1,27 @@
+Igual ao exemplo anterior, única
+diferença é que foi criado um mixin global, mas
+não tem código.
+
+Depois faço um exemplo passando o mixin do fruitMixin.js para global.
+
+--- man.js--- 
+
+// global mixin
+Vue.mixin({
+  created() {
+    /*
+      será executado três vezes, uma para app.vue, list.vue e o new Vue do main.js,
+      na seguinte ordem:
+      1 - new Vue (main.js)
+      2 - App.vue
+      3 - List.vue
+    */
+    console.log("main.js - Global Mixin - Created Hook");
+  }
+});
+
+
+new Vue({
+  el: '#app',
+  render: h => h(App)
+})

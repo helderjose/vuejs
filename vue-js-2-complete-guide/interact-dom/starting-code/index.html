@@ -1,0 +1,22 @@
+<div id="app">
+
+  <!-- repare que esse elemento não vai ser alterado quando chmar o sayHello() -->
+  <h1 v-once>{{ title }}</h1>
+
+  <!-- vai ser alterado quando chamar sayHello() -->
+  <p>{{ sayHello() }} - <a v-bind:href="link">Google</a></p>
+
+  <hr />
+
+  <!-- o link vem de uma string no app.js -->
+  <p v-html="finishedLink"></p>
+
+  <br/>
+  <!-- esse não processa o elemento html -->
+  <p>{{ finishedLink }}</p>
+</div>
+
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<script src="./app.js"></script>
+
+

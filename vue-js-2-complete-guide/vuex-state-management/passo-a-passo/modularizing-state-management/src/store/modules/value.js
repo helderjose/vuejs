@@ -1,0 +1,1 @@
+// could hold value vuex parts (tirar do store.js e colocar aqui, igual fez com o counter)

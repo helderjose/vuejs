@@ -1,0 +1,51 @@
+mock parent
+
+import Vue from 'vue'
+import { mount, shallowMount } from '@vue/test-utils'
+// import Home from '@/Home.vue'
+import RoundedContainer from '../app/pages/diagnostic/shared/rounded-container.vue'
+import Welcome from '../app/pages/diagnostic/steps/welcome.vue'
+
+Vue.component('rounded-container', RoundedContainer)
+
+describe('welcome.vue', () => {
+  // Now mount the component and you have the wrapper
+  // const wrapper = mount(Welcome)
+  const Parent = {
+    data() {
+      return {
+        // selectedContract: null
+        selectedContract: {
+          name: "Homer Simpson"
+        }
+      }
+    }
+  }
+
+  const wrapper = mount(Welcome, {
+    parentComponent: Parent
+  })
+
+  it('renders the correct markup 1', () => {
+    // expect(wrapper.html()).toContain('<p>Server Status: Critical</p>')
+    // expect(wrapper.html()).toContain('<p>welcome.vue</p>') // funcionou
+  })
+
+  // it('renders the correct markup 2', () => {
+  //   // expect(wrapper.html()).toContain('<p>Server Status: Critical</p>')
+  //   // expect(wrapper.html()).toContain('<p>welcome.vue</p>') // funcionou
+  //   // expect(wrapper.html()).toContain(`
+  //   // <h3 class="title__normal">
+  //   //   Olá, aa!
+  //   // </h3>`)
+  // })
+
+  // it('matches snapshot', () => {
+  //   const items = ['item 1', 'item 2']
+  //   const wrapper = shallowMount(List, {
+  //     propsData: { items }
+  //   })
+  //   expect(wrapper.html()).toMatchSnapshot()
+  // })
+})
+

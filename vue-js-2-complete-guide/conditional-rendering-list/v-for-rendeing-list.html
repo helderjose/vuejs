@@ -1,0 +1,52 @@
+<div id="app">
+  <ul>
+    <li v-for="(ingredient, i) in ingredients" :key="i">
+      {{ ingredient }} ({{ i }})
+    </li>
+  </ul>
+  <button @click="ingredients.push('spices')">Add New</button>
+
+  <hr />
+  <ul>
+    <!-- for no array persons -->
+    <li v-for="person in persons">
+      <!-- for nos atributos do objeto person -->
+      <div v-for="(value, key, index) in person">
+        {{ key }}: {{ value }} ({{ index }})
+      </div>
+    </li>
+  </ul>
+
+  <hr />
+  <!-- for em números -->
+  <span v-for="n in 10">{{ n }} </span>
+
+  <hr />
+  <ul>
+    <li>Só os pares</li>
+    <li v-for="n in 10" v-if="n % 2 === 0">{{ n }}</li>
+  </ul>
+</div>
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+<script>
+  new Vue({
+    el: "#app",
+    data: {
+      ingredients: ["meat", "fruit", "cookies"],
+      persons: [
+        { name: "Max", age: 27, color: "red" },
+        { name: "Anna", age: "unknown", color: "blue" }
+      ]
+    }
+  });
+</script>
+
+
+<!--
+  https://vuejs.org/v2/guide/list.html
+
+  v-for   for loop
+  key   unique key (mais seguro na hora de editar um item do array)
+-->
