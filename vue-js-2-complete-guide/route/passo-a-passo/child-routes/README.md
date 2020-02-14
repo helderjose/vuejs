@@ -13,6 +13,13 @@ children
 router-view
 
 # Teste
+history
 http://localhost:8080/user
 http://localhost:8080/user/1
 localhost:8080/user/1/edit
+
+hash
+http://localhost:8080/#/
+http://localhost:8080/#/user
+http://localhost:8080/#/user/1
+http://localhost:8080/#/user/1/edit
