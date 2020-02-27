@@ -24,3 +24,6 @@ ACTIONS
 As actions podem ser assíncronas (uma chamada de api por exemplo).
 As actions são usadas no json de methods do componente vue e podem ser usadas com @click por exemplo.
 
+mutation vs action
+https://blog.logrocket.com/vuex-showdown-mutations-vs-actions-f48f2f7df54b/
+
