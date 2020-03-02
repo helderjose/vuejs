@@ -5,4 +5,5 @@
 1. communicating-between-sibling  // atualiza a variável age
     1. communicating-event-bus
 1. communicating-event-bus-centralizing
+1. event-overload   // cada componente implementa sua versão da mesma função de um componente em comum
 
