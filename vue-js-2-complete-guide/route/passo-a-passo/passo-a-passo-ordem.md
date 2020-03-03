@@ -16,3 +16,9 @@
 1. before-enter-guard
 1. before-leave-guard
 1. loading-routes-lazily (lazy load route)
+
+
+
+Organizar melhor esses exemplos
+1. multiple-router-views-2
+1. multiple-router-views-3
