@@ -21,4 +21,4 @@
 
 Organizar melhor esses exemplos
 1. multiple-router-views-2
-1. multiple-router-views-3
+1. multiple-router-views-3 - simula o drawer, rendireza no drawer e fora dele
