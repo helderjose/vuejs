@@ -3,6 +3,9 @@ programacao2/diversos/lint tem projetos
 
 // exibe as opções do lint
 npx vue-cli-service help lint
+npx vue-cli-service lint myComponent.vue
+npx vue-cli-service lint myComponent.vue
+
 
 Usage: vue-cli-service lint [options] [...files]
 
