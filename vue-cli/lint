@@ -1,0 +1,47 @@
+programacao2/diversos/lint tem projetos
+
+
+// exibe as opções do lint
+npx vue-cli-service help lint
+
+Usage: vue-cli-service lint [options] [...files]
+
+  Options:
+
+    --format [formatter]   specify formatter (default: codeframe)
+    --no-fix               do not fix errors or warnings
+    --no-fix-warnings      fix errors, but do not fix warnings
+    --max-errors [limit]   specify number of errors to make build failed (default: 0)
+    --max-warnings [limit] specify number of warnings to make build failed (default: Infinity)
+
+
+
+codeframe padrão
+https://www.npmjs.com/package/eslint-codeframe-formatter
+
+--------------
+vue-cli-service 3.0.3
+package.json
+"lint": "vue-cli-service lint" // não precisa do --fix ele já corrige usando as regras do .eslintrc.js
+.eslintrc.js
+	module.exports = {
+	  root: true,
+	  env: {
+	    node: true
+	  },
+	  'extends': [
+	    'plugin:vue/essential',
+	    'eslint:recommended'
+	  ],
+	  rules: {
+	    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+	    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+	    'vue/no-unused-vars': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+	    'no-useless-escape': 'off',
+	    "semi": ["error", "always"]
+	  },
+	  parserOptions: {
+	    parser: 'babel-eslint'
+	  }
+	}
+
