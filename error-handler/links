@@ -1,0 +1,17 @@
+https://medium.com/js-dojo/error-exception-handling-in-vue-js-application-6c26eeb6b3e4
+
+https://vuejs.org/v2/api/#silent
+https://vuejs.org/v2/api/#errorHandler
+
+
+Várias opções de error handler no vue
+https://www.raymondcamden.com/2019/05/01/handling-errors-in-vuejs
+
+interceptor no axios
+https://github.com/axios/axios#interceptors
+
+
+
+opções para tratar erro.
+para erro de api request pode usar interceptor do axios ou tratra no catch da promise
+https://stackoverflow.com/questions/49214634/how-to-capture-vuejs-errors-from-a-single-point-inside-a-component
