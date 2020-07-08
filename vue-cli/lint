@@ -22,7 +22,14 @@ Usage: vue-cli-service lint [options] [...files]
 codeframe padrão
 https://www.npmjs.com/package/eslint-codeframe-formatter
 
---------------
+------------------------------------------------------------
+
+
+
+https://cli.vuejs.org/core-plugins/eslint.html#configuration
+https://cli.vuejs.org/guide/cli-service.html#using-the-binary
+--------------------------------------------------------
+
 vue-cli-service 3.0.3
 package.json
 "lint": "vue-cli-service lint" // não precisa do --fix ele já corrige usando as regras do .eslintrc.js
@@ -48,3 +55,30 @@ package.json
 	  }
 	}
 
+
+  -----------------------------------------------
+bolerplate de página
+não corrige sozinho
+module.exports = {
+    lintOnSave: false,
+    pluginOptions: {
+        "serve-api-mocks": {
+            base: "/",
+            routes: mocks.routers
+        }
+    },
+    css: {
+        loaderOptions: {
+            sass: {
+                data: `@import "~mondrian-tokens/dist/claro-tokens-1.0.8.scss";`
+            }
+        }
+    },
+    chainWebpack: config => {
+        config.module.rule('images').use('url-loader')
+            .loader('file-loader') // replaces the url-loader
+            .tap(options => Object.assign(options, {
+                name: 'assets/images/[name].[ext]'
+            }))
+        config.module.rule('svg').use('file-loader')
+            .tap(options => Object.assign(options, {
