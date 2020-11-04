@@ -1,0 +1,1 @@
+vue-test-utils usa o https://jestjs.io/
