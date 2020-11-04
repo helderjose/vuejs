@@ -22,7 +22,7 @@
 
   function myFunc1(param) {
     console.log("UserDetail.vue -> myFunc1()");
-    console.log(param, '\n\n\n')
+    console.log('param:', param, '\n\n\n')
   }
 </script>
 

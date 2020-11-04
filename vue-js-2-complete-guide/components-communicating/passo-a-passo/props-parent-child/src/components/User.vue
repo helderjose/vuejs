@@ -1,8 +1,12 @@
 <template>
   <div class="component">
-    <h1>User.vue</h1>
-    <h1>The User Component</h1>
-    <p>I'm an awesome User!</p>
+    <h3>User.vue</h3>
+    <p>
+      componente pai<br/>
+      The User Component<br/>
+      I'm an awesome User!
+    </p>
+
 		<button @click="changeName">Change my Name</button>
     <hr />
     <div class="row">

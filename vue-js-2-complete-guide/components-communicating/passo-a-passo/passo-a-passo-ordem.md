@@ -1,5 +1,5 @@
-1. props-parent-child
-1. props-use-in-child
+1. props-parent-child  // passa uma propriedade para o componente filho.
+1. props-use-in-child // altera a propriedade apenas no componente filho.
 1. props-validating   // tipo da props como string por exemplo, default value e etc
 1. event-child-to-parent    // $emit, $event
 1. communicating-between-sibling  // atualiza a variável age

@@ -1,5 +1,5 @@
 <template>
-  <div class="component">
+  <div id="user-edit" class="component">
     <h3>UserEdit.vue</h3>
 		<Common
 			@on-itemClicked="myFunc2('editParam1', 'editParam2', age)">
@@ -26,14 +26,14 @@
 
   function myFunc2(param1, param2, paramAge) {
 		console.log("UserDetail.vue -> myFunc2()"),
-		console.log(param1)
-		console.log(param2)
-		console.log(paramAge, '\n\n\n')
+		console.log("param1: ", param1)
+		console.log("param2: ", param2)
+		console.log("paramAge: ", paramAge, '\n\n\n')
   }
 </script>
 
 <style scoped>
-	div {
+	#user-edit {
 		background-color: lightgreen;
 	}
 </style>

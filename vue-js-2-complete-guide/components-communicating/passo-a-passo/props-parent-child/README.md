@@ -7,10 +7,14 @@ http://localhost:8080/
 
 Esse exemplo passa a propriedade do pai para o filho.
 
-
-# UserDetail.vue (componete filho)
-Declara a propriedade
+# App.vue
+Usa o User.vue
 
 # User.vue (componente pai)
-Atribui um valor à propriedade
+Atribui um valor à propriedade name e passa para UserDetail.vue
+
+# UserDetail.vue (componete filho)
+Declara a propriedade name
+
+
 

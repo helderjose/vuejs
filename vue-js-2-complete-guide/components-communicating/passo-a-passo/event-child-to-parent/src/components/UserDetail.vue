@@ -10,7 +10,7 @@
 	export default {
 		props: {
 			myName: {
-					type: String,
+				type: String,
 			}
 		},
 		methods: {

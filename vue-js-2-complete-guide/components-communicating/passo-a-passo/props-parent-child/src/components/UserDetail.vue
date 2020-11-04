@@ -1,7 +1,11 @@
 <template>
   <div class="component">
-    <h3>UserDetail.vue</h3>
-    <h3>You may view the User Details here</h3>
+    <p>
+      UserDetail.vue<br/>
+      componente filho<br/>
+      You may view the User Details here
+    </p>
+
     <p>Many Details</p>
 
     <!-- exibe a propriedade name do props: ['name'] -->
