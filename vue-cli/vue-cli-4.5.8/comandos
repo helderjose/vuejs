@@ -1,0 +1,8 @@
+vue --help
+
+vue --version
+@vue/cli 4.5.8
+
+
+vue --help
+vue create --help

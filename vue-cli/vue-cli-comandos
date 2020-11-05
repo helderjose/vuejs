@@ -11,7 +11,7 @@ vue --help
 
 Exemplos
 vue create vue-cli-new
-Please picka a preset: Manually
+Please pick a preset: Manually
 
 Selecione os presets desejados (espaço para marcar)
 para esse exemplo marque: Babel, Progressive Web App, Router, Vuex, Linter

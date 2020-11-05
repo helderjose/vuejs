@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  }
+}
+
+You can invoke these scripts using either npm or Yarn:
+npm run serve
+yarn serve
+-----------------------------------
+
+If you have npx available (should be bundled with an up-to-date version of npm), you
+can also invoke the binary directly with:
+
+npx vue-cli-service serve
+
+npm tem na pasta
+.../programacao-2/nodejs/nodejs/modulos-node
