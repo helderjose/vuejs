@@ -1,0 +1,9 @@
+# criando-projeto
+
+- Precisa do @vue-cli;
+vue --help
+vue create --help
+vue create -n my-project
+  vai abrir um wizard para criar o projeto
+  Aqui dá para criar com Unit Testing e E2E testing
+
