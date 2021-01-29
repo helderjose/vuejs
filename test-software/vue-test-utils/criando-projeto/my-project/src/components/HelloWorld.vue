@@ -47,6 +47,13 @@ export default {
     }
   }
 };
+
+
+/*
+palavras chaves:
+aparecer no coverage
+componente não aparece no coverage
+*/
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
