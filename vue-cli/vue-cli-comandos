@@ -1,8 +1,9 @@
 Obs: Talvez pecise do sudo nos comandos de instalação
 
 npm install -g @vue/cli
-
 npm install -g @vue/cli-service-global
+
+se der erro nos comando use sudo
 
 vue --version
 vue --help
