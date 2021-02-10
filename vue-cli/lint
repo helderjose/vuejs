@@ -70,7 +70,7 @@ module.exports = {
     css: {
         loaderOptions: {
             sass: {
-                data: `@import "~mondrian-tokens/dist/claro-tokens-1.0.8.scss";`
+                data: `@import "~design-system-tokens/dist/lib-tokens-1.0.8.scss";`
             }
         }
     },

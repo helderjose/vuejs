@@ -1,0 +1,7 @@
+https://vue-test-utils.vuejs.org/guides/common-tips.html#asserting-emitted-events
+https://vue-test-utils.vuejs.org/guides/common-tips.html#emitting-event-from-child-component
+
+
+
+testar emit
+testar $emit

@@ -1,0 +1,5 @@
+vue --help
+vue create --help
+vue create hello-world
+
+Vai aparecer um wizard, basta ir marcando as opções, lint, babel, unit test, e2e test e etc.
