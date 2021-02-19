@@ -9,6 +9,14 @@ vue --version
 vue --help
 
 
+--- desinstalar ---
+Se der erro use sudo
+npm uninstall -g @vue/cli
+npm uninstall -g @vue/cli-service-global
+
+
+
+
 
 Exemplos
 vue create vue-cli-new
