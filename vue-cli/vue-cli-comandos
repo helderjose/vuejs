@@ -1,19 +1,23 @@
-Obs: Talvez pecise do sudo nos comandos de instalação
-
-npm install -g @vue/cli
-npm install -g @vue/cli-service-global
+---- instalação -----
+Obs: tente sem o sudo, se der erro use-o
+sudo npm install -g @vue/cli
+sudo npm install -g @vue/cli-service-global
 
 se der erro nos comando use sudo
 
-vue --version
+vue --version   // se não imprimir nada reinicie o terminal e execute novamente.
 vue --help
+----------------------------
 
 
 --- desinstalar ---
-Se der erro use sudo
-npm uninstall -g @vue/cli
-npm uninstall -g @vue/cli-service-global
+Obs: tente sem o sudo, se der erro use-o
+sudo npm uninstall -g @vue/cli
+sudo npm uninstall -g @vue/cli-service-global
 
+Reinicie o terminal e execute
+vue --version
+-----------------------------------------------------
 
 
 
