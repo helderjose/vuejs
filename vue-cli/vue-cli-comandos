@@ -3,6 +3,10 @@ Obs: tente sem o sudo, se der erro use-o
 sudo npm install -g @vue/cli
 sudo npm install -g @vue/cli-service-global
 
+versão específica
+sudo npm install -g @vue/cli@4.4.5
+sudo npm install -g @vue/cli-service-global
+
 se der erro nos comando use sudo
 
 vue --version   // se não imprimir nada reinicie o terminal e execute novamente.
